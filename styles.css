@@ -1,0 +1,239 @@
+*,::after, ::before{
+    box-sizing: border-box;
+}
+html{
+    background-color: black;
+    
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:  #FAFAFA;
+    border-radius: 7px;    
+}
+
+.main{
+    display: flex;
+    width: 80%;
+    max-width: 1400px;
+    flex-direction: column;
+    margin-inline:  auto;
+    /* border: 1px solid blue; */
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-left: 20px;
+    margin: 40px auto;
+    /* border: 1px solid; */
+}
+
+.heading{
+    font-family: PT serif;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: right;
+    padding-left: 30px;
+    color: #000000;
+    
+    /* border: 1px solid; */
+}
+.introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 0;
+    width: 50%;
+    font-family: poppins;
+    padding-inline: 15px;
+    font-size: 20px;
+    /* border: 1px solid pink; */
+
+}
+.question{
+    align-self: flex-start;
+    margin:0;
+    font-weight: 600;
+}
+.description{
+    font-weight: 400;
+    margin-top:10px;
+    /* border: 1px solid; */
+}
+.image-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: clip;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* padding-top: 50px; */
+    gap: 5rem;
+    /* border: 1px solid; */
+}
+
+.image-text{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   /* border: 1px solid; */
+}
+
+img{
+    width: 265px;
+    height: 380px;
+}
+.two, .five{
+    margin-top: 120px;
+}
+
+.designation{
+    align-self: flex-start;
+    writing-mode:vertical-lr;
+    padding-left: 10px;
+    
+}
+
+figcaption{
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+footer{
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #A9A9A9;
+    /* border:1px solid grey; */
+}
+
+/* Media query for responsiveness*/
+@media(min-width:1450px){
+    body{
+        height: 100vh;
+    }
+}
+
+@media(max-width:1300px){
+    .main{
+        width: 100%;
+    }
+    .image-container{
+        justify-content: space-evenly;
+        gap: 3rem;
+    }
+    
+}
+@media(max-width:1200px){
+    /* .image-container{
+        gap: 2rem;
+    } */
+     .heading{
+        text-align: right;
+        font-size: 36px;
+     }
+     .introduction{
+        font-size:18px;
+     }
+    .image-container{
+        gap: 3rem;
+    }
+    img{
+        width: 280px;
+        height: 380px;
+    }  
+}
+@media(max-width: 1020px){
+    .two, .four, .six{
+        margin-top: 120px;
+    } 
+     .five{
+        margin-top: 0;
+    } 
+}
+@media(max-width: 760px){
+    .header{
+        flex-direction: column;
+        gap: 10px;
+        margin:20px;
+        padding-top: 10px;
+    }
+    .heading{
+        width: 100%;
+        font-size: 36px;
+        text-align: left;
+        padding-left: 10px;
+    }
+    .introduction{
+        width: 100%;
+        font-size: 18px;
+    }
+    .image-container{
+        gap: 2rem;
+    }
+    img{
+        width: 210px;
+        height: 300px;
+    }
+
+}
+@media(max-width: 550px){
+    .header{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .heading{
+        width: 100%;
+        font-size: 36px;
+        text-align: left;
+        padding-left: 10px;
+    }
+    .introduction{
+        width: 100%;
+        font-size: 18px;
+    }
+    .image-container{
+        padding: 10px;
+        gap: 1.25rem;
+    }
+    img{
+        width: 146px;
+        height: 227px;
+    }
+    figcaption{
+        font-size: 16px;
+    }
+    .designation{
+        padding-left: 4px;
+        font-size:12px;
+        font-weight: 600;
+    }
+
+}
+@media(max-width: 370px){
+    .header{
+        padding: 0;
+    }
+    .image-container{
+        padding: 20px;
+        gap: 3rem;
+    }
+    .two, .four, .five, .six{
+        margin-top: 0;
+    }
+}
+
+
+
+
