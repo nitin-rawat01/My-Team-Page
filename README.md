@@ -29,6 +29,7 @@
 
 ![myTeamPage](https://github.com/user-attachments/assets/1701291c-6e99-4779-9dad-fe2fdf915ac7)
 ## Mobile View
+![Screenshot 2024-11-01 at 17-50-10 My Team Page](https://github.com/user-attachments/assets/89d7f0f1-13eb-407b-8a7e-84ab1cc6952c)
 
 ### Built With
 
